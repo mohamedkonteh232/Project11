@@ -1,0 +1,574 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <title>Freetown Polytechnic-Lecturer Attendance System</title>
+
+        <link rel="stylesheet" href="styles/styles.css">
+        </head>
+
+        <body>
+         <!-- ================= LOGIN PAGE ================= -->
+         <section class="login-page">
+
+            <div class="login-box">
+                <div class="College-Logo">
+                    FP
+            </div>
+
+            <h1>FREETOWN POLYTECHNIC</h1>
+            <p>Lecturer Sign-In & Sign-Out System</p>
+
+            <form>
+                <label for="username">Lecturer ID</label>
+                <input
+                type="text"
+                id="username"
+                placeholder="Enter Lecturer ID"
+                >
+
+                <label for="Password">Password</label>
+                <input
+                type="password"
+                id="password"
+                placeholder="Enter Password"
+                >
+
+                <button type="submit" class="login-btn">
+                    SIGN IN
+                </button>
+
+                <a href="#" class="forgot">
+                    Forgot Password?
+                </a>
+
+                </form>
+
+                </div>
+
+                </section>
+
+                <!-- ================= MAIN SYSTEM ================= -->
+                <div class="system-container">
+
+                    <!--SIDEBAR-->
+                    <aside class="sidebar">
+
+                        <div class="sidebar-header">
+                            <div class="logo">FTC</div>
+
+                            <div>
+                                <h2>FREETOWN POLYTECHNIC</h2>
+                                <small>Lecturer System</small>
+                            </div>
+                            </div>
+
+                            <nav>
+
+                                <a href="#" class="active">
+                                    Dashboard
+                                    </a>
+
+                                    <a href="#">
+                                        Lecturers
+                                        </a>
+
+                                        <a href="#">
+                                            Sign In
+                                        </a>
+
+                                        <a href="#">
+                                            Sign Out
+                                        </a>
+
+                                        <a href="#">
+                                            Attendance
+                                        </a>
+
+                                        <a href="#">
+                                            Reports
+                                        </a>
+
+                                        <a href="#">
+                                            Working Hours
+                                        </a>
+
+                                        <a href="#">
+                                            Settings
+                                        </a>
+
+                            </nav>
+
+                            <div class="logout-area">
+                                <button class="logout-btn">
+                                    Logout
+                                </button>
+                            </div>
+
+                            </aside>
+
+                            <!-- MAIN CONTENT -->
+                            <main class="main-content">
+
+                                <!-- TOP BAR -->
+                                 <header class="topbar">
+
+                                    <div>
+                                        <h1>Lecturer Attendance Dashboard</h1>
+                                        <p>Welcome to Freetown Polytechnic Attendance Management System</p>
+                                    </div>
+
+                                    <div class="Profile">
+
+                                        <div class="Profile-image">
+                                            LC
+                                    </div>
+
+                                    <div>
+                                        <strong>Lecturer Coordinator</strong>
+                                        <small>Administrator</small>
+                                        </div>
+
+                                        </div>
+
+                                        </header>
+
+                                        <!-- DATE -->
+                                         <div class="date-section">
+                                            <div>
+                                                <strong>Monday, 30 August 2026</strong>
+                                                <span> | </span>
+                                                <strong>09:30 AM</strong>
+                                         </div>
+
+                                         <div class="status">
+                                            System Online
+                                         </div>
+                                         </div>
+
+                                         <!-- STATISTICS -->
+                                          <section class="statistics">
+
+                                            <div class="stat-card">
+                                                <div class="stat-icon blue">
+                                                </div>
+
+                                                <div>
+                                                    <h3>85</h3>
+                                                    <p>Total Lecturers</p>
+                                                    </div>
+                                                    </div>
+
+                                                    <div class="stat-card">
+                                                        <div class="stst-icon green">
+                                                        </div>
+
+                                                        <div>
+                                                            <h3>62</h3>
+                                                            <p>Lecturers Signed In</p>
+                                                            </div>
+                                                            </div>
+
+                                                            <div class="stat-icon red">
+                                                                </div>
+
+                                                                <div>
+                                                                    <h3>18</h3>
+                                                                    <p>Lecturers Signed Out</p>
+                                                                    </div>
+                                                                </div>
+
+                                                                <div class="stat-card">
+                                                                    <div class="stat-icon orange">
+                                                                    </div>
+
+                                                                    <div>
+                                                                        <h3>05</h3>
+                                                                        <p>Not Yet Arrived</p>
+                                                                        </div>
+                                                                        </div>
+
+                                                                    </section>
+
+                                                                    <!--SIGN IN / SIGN OUT PANEL -->
+                                                                    <section class="attendance-panel">
+
+                                                                        <div class="panel-header">
+
+                                                                            <div>
+                                                                                <h2>Lecturer Sign-In / Sign-Out</h2>
+                                                                                <p>Record lecturer attendance</p>
+                                                                                </div>
+
+                                                                                <span class="live">
+                                                                                    LIVE 
+                                                                                </span>
+
+                                                                                </div>
+
+                                                                                <div class="attendance-form">
+                                                                                    <div class="form-group">
+
+                                                                                        <label>Lecturer ID</label>
+
+                                                                                        <input
+                                                                                        type="text"
+                                                                                        placeholder="e.g. FTC/LCT/001"
+                                                                                        >
+
+                                                                                        </div>
+
+                                                                                        <div class="form-group">
+                                                                                            <label>Lecturer Name</label>
+
+                                                                                            <input
+                                                                                            type="text"
+                                                                                            placeholder="Enter lecturer name"
+                                                                                            >
+
+                                                                                            </div>
+
+                                                                                            <div class="form-group">
+
+                                                                                                <label>Department</label>
+
+                                                                                                <select>
+
+                                                                                                    <option>Select Department</option>
+
+                                                                                                    <option>Computer Science</option>
+
+                                                                                                    <option>Business Administration</option>
+
+                                                                                                    <option>Accounting</option>
+
+                                                                                                    <option>Engineering</option>
+
+                                                                                                    <option>Health Science</option>
+
+                                                                                                    <option>Education</option>
+
+                                                                                                    </select>
+
+                                                                                                    </div>
+
+                                                                                                    <div class="action-buttons">
+
+                                                                                                        <button class="sign-in-btn">
+                                                                                                            SIGN IN
+                                                                                                            </button>
+
+                                                                                                            <button class="sign-out-btn">
+                                                                                                                SIGN OUT
+                                                                                                                </button>
+
+                                                                                                                </div>
+
+                                                                                                                </div>
+                                                                                                                
+                                                                                                                </section>
+
+                                                                                                                <!-- ATTENDANCE TABLE -->
+                                                                                                                 <section class="table-section">
+
+                                                                                                                    <div class="table-header">
+
+                                                                                                                        <div>
+                                                                                                                            <h2>Today's Attendance</h2>
+                                                                                                                            <p>Latest lecturer attendance records</p>
+                                                                                                                            </div>
+
+                                                                                                                            <input
+                                                                                                                            type="search"
+                                                                                                                            placeholder="search lecturer..."
+                                                                                                                            >
+
+                                                                                                                            </div>
+
+                                                                                                                            <div class="table-container">
+                                                                                                                                
+                                                                                                                                <table>
+
+                                                                                                                                    <thead>
+                                                                                                                                        
+                                                                                                                                        <tr>
+
+                                                                                                                                            <th>Lecturer ID</th>
+
+                                                                                                                                            <th>Lecturer Name</th>
+
+                                                                                                                                            <th>Department</th>
+
+                                                                                                                                            <th>Date</th>
+
+                                                                                                                                            <th>Sign In</th>
+
+                                                                                                                                            <th>Sign Out</th>
+
+                                                                                                                                            <th>Status</th>
+
+                                                                                                                                            <th>Action</th>
+
+                                                                                                                                            </tr>
+
+                                                                                                                                            </thead>
+
+                                                                                                                                            <tbody>
+
+                                                                                                                                                <tr>
+
+                                                                                                                                                <td>FTC/LCT/001</td>
+                                                                                                                                                
+                                                                                                                                                <td>
+                                                                                                                                                    <strong>Mohamed Conteh</strong>
+                                                                                                                                                </td>
+
+                                                                                                                                                <td>Computer Science</td>
+
+                                                                                                                                                <td>30/08/226</td>
+
+                                                                                                                                                <td>07:45 AM</td>
+
+                                                                                                                                                <td>04:30 PM</td>
+
+                                                                                                                                                <td>--</td>
+
+                                                                                                                                                <td>
+                                                                                                                                                 <span class="badge present">
+                                                                                                                                                    present
+                                                                                                                                                 </span>
+                                                                                                                                                 </td>
+                                                                                                                                                 
+                                                                                                                                                <td>
+                                                                                                                                                    <button class="view-btn">
+                                                                                                                                                        Viwe
+                                                                                                                                                        </button>
+                                                                                                                                                        </td>
+
+                                                                                                                                                        </tr>
+
+                                                                                                                                                        <tr>
+
+                                                                                                                                                            <td>FTC/LCT/002</td>
+
+                                                                                                                                                            <td>
+                                                                                                                                                             <strong>Mohamed Conteh</strong>
+                                                                                                                                                             </td>
+                                                                                                                                                             
+                                                                                                                                                             <td>Accounting</td>
+
+                                                                                                                                                             <td>30/08/2026</td>
+
+                                                                                                                                                             <td>08:05 AM</td>
+
+                                                                                                                                                             <td>04:30 PM</td>
+
+                                                                                                                                                             <td>--</td>
+
+                                                                                                                                                             <td>
+                                                                                                                                                                <span class="badge signed">
+                                                                                                                                                                    Signed In
+                                                                                                                                                                </span>
+                                                                                                                                                                </td>
+
+                                                                                                                                                                <td>
+                                                                                                                                                                    <button class="view-btn">
+                                                                                                                                                                        Viwe
+                                                                                                                                                                    </button>
+                                                                                                                                                                    </td>
+
+                                                                                                                                                                    </tr>
+
+                                                                                                                                                                    <tr>
+
+                                                                                                                                                                        <td>FTC/LCT/003</td>
+
+
+                                                                                                                                                                        <td>
+                                                                                                                                                                            <strong>Mohamed Sesay</strong>
+                                                                                                                                                                            </td>
+
+                                                                                                                                                                            <td>Business</td>
+
+                                                                                                                                                                            <td>30/08/2026</td>
+
+                                                                                                                                                                            <td>08:15 AM</td>
+
+                                                                                                                                                                            <td>04:30 PM</td>
+
+                                                                                                                                                                            <td>--</td>
+
+                                                                                                                                                                            <td>
+                                                                                                                                                                                <span class="badge signed">
+                                                                                                                                                                                    Signed In
+                                                                                                                                                                                </span>
+                                                                                                                                                                            </td>
+
+                                                                                                                                                                            <td>
+                                                                                                                                                                                <button class="view-btn">
+                                                                                                                                                                                    Viwe
+                                                                                                                                                                                </button>
+                                                                                                                                                                            </td>
+
+                                                                                                                                                                            </tr>
+
+                                                                                                                                                                            <tr>
+                                                                                                                                                                                
+                                                                                                                                                                                <td>FTC/LCT/004</td>
+
+                                                                                                                                                                                <td>
+                                                                                                                                                                                    <strong>John Bangura</strong>
+                                                                                                                                                                            </td>
+
+                                                                                                                                                                            <td>Engineering</td>
+
+                                                                                                                                                                            <td>30/08/2026</td>
+
+                                                                                                                                                                            <td>08:30 AM</td>
+
+                                                                                                                                                                           <td>04:30 PM</td>
+
+                                                                                                                                                                            <td>--</td>
+
+
+                                                                                                                                                                            <td>
+                                                                                                                                                                                <span class="badge absent">
+                                                                                                                                                                                    Absent
+                                                                                                                                                                                </span>
+                                                                                                                                                                                </td>
+
+                                                                                                                                                                                <td>
+                                                                                                                                                                                    <button class="view-btn">
+                                                                                                                                                                                        Viwe
+                                                                                                                                                                                    </button>
+                                                                                                                                                                                </td>
+
+                                                                                                                                                                                </tr>
+
+                                                                                                                                                                                </tbody>
+
+                                                                                                                                                                                </table>
+
+                                                                                                                                                                                </div>
+
+                                                                                                                                                                                </section>
+
+                                                                                                                                                                                <!-- QUICK ACTIONS-->
+                                                                                                                                                                                 <section class="quick-section">
+
+                                                                                                                                                                                    <h2>Quick Actions</h2>
+
+                                                                                                                                                                                    <div class="quick-grid">
+
+                                                                                                                                                                                        <div class="quick-card">
+
+                                                                                                                                                                                            <div class="quick-icon">
+                                                                                                                                                                                                </div>
+
+                                                                                                                                                                                                <h3>Register Lecturer</h3>
+
+                                                                                                                                                                                                <p>
+                                                                                                                                                                                                    Add a new lecturer to the college system.
+                                                                                                                                                                                                </p>
+
+                                                                                                                                                                                                <button>
+                                                                                                                                                                                                    Add Lecturer
+                                                                                                                                                                                                </button>
+
+                                                                                                                                                                                                </div>
+
+                                                                                                                                                                                                <div class="quick-card">
+
+                                                                                                                                                                                                    <div class="quick-icon">
+                                                                                                                                                                                                        </div>
+
+                                                                                                                                                                                                        <h3>Attendance Report</h3>
+
+                                                                                                                                                                                                        <p>
+                                                                                                                                                                                                            View and generate lecturer attendance Reports.
+                                                                                                                                                                                                        </p>
+
+                                                                                                                                                                                                        <button>
+                                                                                                                                                                                                            View Report
+                                                                                                                                                                                                        </button>
+
+                                                                                                                                                                                                        </div>
+
+                                                                                                                                                                                                        <div class="quick-card">
+
+                                                                                                                                                                                                            <div class="quick-icon">
+                                                                                                                                                                                                                </div>
+
+                                                                                                                                                                                                                <h3>Working Hours</h3>
+
+                                                                                                                                                                                                                <p>
+                                                                                                                                                                                                                    Check the number of hours worked by lecturers.
+                                                                                                                                                                                                                </p>
+
+                                                                                                                                                                                                                <button>
+                                                                                                                                                                                                                    Check Hours
+                                                                                                                                                                                                                </button>
+
+                                                                                                                                                                                                                </div>
+
+                                                                                                                                                                                                                <div class="quick-card">
+
+                                                                                                                                                                                                                    <div class="quick-icon">
+                                                                                                                                                                                                                        </div>
+
+                                                                                                                                                                                                                        <h3>System Setting</h3>
+
+                                                                                                                                                                                                                        <p>
+                                                                                                                                                                                                                            Manage system configuration and users.
+                                                                                                                                                                                                                        </p>
+
+                                                                                                                                                                                                                        <button>
+                                                                                                                                                                                                                            Setting
+                                                                                                                                                                                                                        </button>
+
+                                                                                                                                                                                                                        </div>
+
+                                                                                                                                                                                                                        </div>
+
+                                                                                                                                                                                                                        </section>
+
+                                                                                                                                                                                                                        <!-- FOOTER-->
+                                                                                                                                                                                                                         <footer>
+
+                                                                                                                                                                                                                            <p>
+                                                                                                                                                                                                                                @ 2026 FTC College | Lecturer Sign-In & Sign-Out System
+                                                                                                                                                                                                                            </p>
+
+                                                                                                                                                                                                                            <p>
+                                                                                                                                                                                                                                Developed for FTC College
+                                                                                                                                                                                                                            </p>
+
+                                                                                                                                                                                                                            </footer>
+
+                                                                                                                                                                                                                        </main>
+
+                                                                                                                                                                                                                    </div>
+
+                                                                                                                                                                                                                </body>
+                                                                                                                                                                                                                </html>
+                                                                                                                                                                                            
+
+
+
+                                                                                                                                                                        
+
+
+
+                                                                                                                                                                    
+
+
+
+
+
+
+
+
+
+    
